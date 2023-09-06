@@ -2,7 +2,8 @@ song = "";
 
 function preload()
 {
-	song = loadSound("music_2.mp3");
+	//Coloque o nome da música que será tocada no site
+	song = loadSound("???");
 }
 
 scoreRightWrist = 0;
@@ -15,7 +16,9 @@ leftWristX = 0;
 leftWristY = 0;
 
 function setup() {
-	canvas =  createCanvas(600, 500);
+
+	//Utilize o código 'createCanvas' para criar um canvas
+	canvas =  ???(600, 500);
 	canvas.center();
 
 	video = createCapture(VIDEO);
@@ -33,7 +36,8 @@ function gotPoses(results)
 {
   if(results.length > 0)
   {
-	console.log(results);
+	  //Utilize o código 'console.log(results);' para mostrar os resultados no console
+	???
 	scoreRightWrist =  results[0].pose.keypoints[10].score;
 	scoreLeftWrist =  results[0].pose.keypoints[9].score;
 	console.log("scoreRightWrist = " + scoreRightWrist + " scoreLeftWrist = " + scoreLeftWrist);
